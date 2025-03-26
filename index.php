@@ -1,13 +1,5 @@
 <?php 
-function randomPassword($lengthPass) {
-  $alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-  $pass = "";
-  for ($i = 0; $i < $lengthPass; $i++) {
-      $n = rand(0, strlen($alphabet) - 1); 
-      $pass .= $alphabet[$n]; 
-  }
-  return $pass;
-}
+require_once "./functions.php"
 ?>
 
 <!DOCTYPE html>
